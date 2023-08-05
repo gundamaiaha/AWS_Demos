@@ -3,9 +3,6 @@ spring:
     url: jdbc-secretsmanager:mysql://employees-database.c1vd6amykmfy.ap-south-1.rds.amazonaws.com:3306/emp_db
     username: ${db-secret}
     driver-class-name: com.amazonaws.secretsmanager.sql.AWSSecretsManagerMySQLDriver
-    hikari:
-      connection-timeout: 20000
-      maximum-pool-size: 10
   jpa:
     show-sql: true
     hibernate:
