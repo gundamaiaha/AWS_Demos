@@ -1,8 +1,0 @@
-package com.myapps.rds.repository;
-
-
-import com.myapps.rds.model.Product;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface ProductRepository extends JpaRepository<Product,Long> {
-}
