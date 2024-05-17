@@ -1,0 +1,26 @@
+
+#spring:
+#  datasource:
+#    url: ${DB_URL}
+#    username: ${DB_USERNAME}
+#    password: ${DB_PASSWORD}
+#    driver-class-name: org.postgresql.Driver
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+
+
+spring:
+  jpa:
+    show-sql: true
+
+aws:
+  region: ap-south-1
+  accessKey: ${AWS_ACCESS_KEY}
+  secretAccessKey: ${AWS_SECRET_ACCESS_KEY}
+  ssm:
+   db:
+    url-parameter: /quizmaster/dev/db/url
+    username-parameter: /quizmaster/dev/db/username
+    password-parameter: /quizmaster/dev/db/password
